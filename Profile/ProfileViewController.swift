@@ -24,6 +24,9 @@ class ProfileViewController: UIViewController {
         self.view.backgroundColor = .lightGray
         self.title = "Profile"
         self.view.addSubview(profileHeaderView)
+        setupConstraints()
+    }
+    func  setupConstraints(){
         NSLayoutConstraint.activate([
             self.profileHeaderView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0),
             self.profileHeaderView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
@@ -31,7 +34,6 @@ class ProfileViewController: UIViewController {
             self.profileHeaderView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0),
         ])
     }
-  
 }
 
 
